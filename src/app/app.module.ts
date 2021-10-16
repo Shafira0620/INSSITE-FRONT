@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { WelcomeViewStudentComponent } from './student/welcome-view-student/welcome-view-student.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialComponentsModule } from './material-components/material-components.module';
+import { ToolbarComponent } from './student/welcome-view-student/toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeViewStudentComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
