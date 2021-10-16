@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeViewStudentComponent } from './student/welcome-view-student/welcome-view-student.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialComponentsModule } from './material-components/material-components.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialComponentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
