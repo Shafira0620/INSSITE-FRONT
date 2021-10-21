@@ -11,5 +11,4 @@ export class WelcomeViewStudentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
