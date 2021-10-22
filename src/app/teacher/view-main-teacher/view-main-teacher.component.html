@@ -31,8 +31,9 @@
     </mat-drawer>
         <h1>Courses</h1>
     
-    <section class="products">
+    <section class="courses" *ngIf="getCourses().lenght==0; else sinCursos">
       <mat-card class="card">
+        
         <div class="example-ripple-container mat-elevation-z4"
        matRipple
        [matRippleCentered]="centered"
@@ -42,5 +43,6 @@
        </div>     
       </mat-card>
   </section>
+  <ng-template #sinCursos><span>You do not have courses created yet.</span></ng-template>
   </mat-drawer-container>
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CourseService } from 'src/app/courses/services/course.service';
 
 @Component({
   selector: 'app-view-main-teacher',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewMainTeacherComponent implements OnInit {
   showFiller = false;
+
   centered = false;
   disabled = false;
   unbounded = false;
@@ -15,9 +17,18 @@ export class ViewMainTeacherComponent implements OnInit {
   save(){}
   undo(){}
   logout(){}
-  constructor() { }
+  constructor(private courseService:CourseService) { }
 
   ngOnInit(): void {
+    this.getCourse();
+  }
+    
+  getCourse(){
+    this.courseService.getCourses()
+    .subscribe(
+      res=>console.log(res),
+      err=> console.log(err)
+    )
   }
 
 }
