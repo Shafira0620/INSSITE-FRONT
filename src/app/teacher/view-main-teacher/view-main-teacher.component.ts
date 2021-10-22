@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {tap} from 'rxjs/operators';
+import { Course } from 'src/app/courses/interfaces/course.interface';
 import { CourseService } from 'src/app/courses/services/course.service';
 
 @Component({
@@ -14,21 +16,17 @@ export class ViewMainTeacherComponent implements OnInit {
   unbounded = false;
   //radius: number;
   //color: string;
-  save(){}
-  undo(){}
+  goHome(){}
+  goAddCourse(){}
   logout(){}
-  constructor(private courseService:CourseService) { }
+  courses!: Course[];
+
+  constructor(private courseService: CourseService) { }
 
   ngOnInit(): void {
-    this.getCourse();
-  }
-    
-  getCourse(){
-    this.courseService.getCourses()
-    .subscribe(
-      res=>console.log(res),
-      err=> console.log(err)
-    )
+    this.courseService.getCourses().pipe(
+      tap((courses: Course[])=> this.courses=courses)
+    ).subscribe();
   }
 
 }
