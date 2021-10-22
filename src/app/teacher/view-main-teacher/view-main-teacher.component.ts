@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./view-main-teacher.component.scss']
 })
 export class ViewMainTeacherComponent implements OnInit {
-
+  showFiller = false;
+  centered = false;
+  disabled = false;
+  unbounded = false;
+  //radius: number;
+  //color: string;
+  save(){}
+  undo(){}
+  logout(){}
   constructor() { }
 
   ngOnInit(): void {
