@@ -1,36 +1,55 @@
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-nav{
-  background-color: rgb(240, 236, 231);
-  height: 20%;
+header{
+  background-color: rgb(218, 221, 223);
   width: 100%;
-  display: border-box;
-  padding: 0%;
+  height: 15%;
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.menu{
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
 }
 
 img{
+  width: 120px;
+  height: 100px;
+  float: left;
+  padding: 8px;
+}
+
+nav{
+  float: right;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 75px;
+  padding: 25px 0;
+  float: left;
   position: relative;
-  display: inline-block;
-  width: 20%;
-  height: 80%;
-  margin-left: 5%;
-  margin-right: 45%;
 }
 
-.button-courses,.button-logout{
-  display: inline-block;
-  height: 30%;
-  width: 10%;
-  margin-right: 5%;
-  padding: 0%;
-  border: 0% none black;
+nav ul li a{
+  text-decoration: none;
+  color: aqua;
+  font-weight: bold;
+  font-size: 2em;
 }
 
-div{
+.banner{
   display: block;
-  height: 80%;
-  background-color: aqua;
+  height: 85%;
+  width: 100%;
+  background-image: url(https://mott.pe/noticias/wp-content/uploads/2019/04/10-programas-para-hacer-imagenes-con-movimiento-de-manera-sencilla.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
