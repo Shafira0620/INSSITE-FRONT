@@ -6,8 +6,8 @@ import { Observable } from 'rxjs/internal/Observable';
   providedIn: 'root'
 })
 export class CourseService {
-  BASE_URL:string='http://localhost:3000/'
-  constructor(private http:HttpClient) { }
+  BASE_URL:string='http://localhost:3000'
+  constructor(private http:HttpClient) { } 
   getCourses():Observable<Course[]>{
     return this.http.get<Course[]>('$(this.BASE_URL)/course/:idUser');
   }

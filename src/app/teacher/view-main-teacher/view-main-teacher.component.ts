@@ -19,8 +19,8 @@ export class ViewMainTeacherComponent implements OnInit {
   goHome(){}
   goAddCourse(){}
   logout(){}
-  courses!: Course[];
 
+  courses!: Course[];
   constructor(private courseService: CourseService) { }
 
   ngOnInit(): void {
