@@ -46,10 +46,30 @@ nav ul li a{
 }
 
 .banner{
-  display: block;
+  display: flex;
   height: 85%;
   width: 100%;
   background-image: url(https://mott.pe/noticias/wp-content/uploads/2019/04/10-programas-para-hacer-imagenes-con-movimiento-de-manera-sencilla.png);
   background-repeat: no-repeat;
   background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-interno{
+  height: 40%;
+  width: 40%;
+  background-color: aqua;
+}
+
+.banner h2{
+  display: block;
+}
+
+.banner p{
+  display: block;
+}
+
+.banner button{
+  display: block;
 }
