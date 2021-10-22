@@ -51,8 +51,10 @@ table {
   border-spacing: 0;
 }
 
+
+
 .barra-superior{
-  background-color: #a9e9e1;
+  background-color: #70c0b7;
   display: block;
   height: 5%;
   width: 100%;
@@ -62,7 +64,7 @@ table {
   display: inline-block;
   height: 95%;
   width: 15%;
-  background-color: brown;
+  background-color: rgb(178, 182, 196);
 }
 
 .barra-lateral img{
@@ -73,16 +75,25 @@ table {
 
 .barra-lateral ul{
   display: block;
-  margin-top: 5%;
   height: 40%;
+  background-color: rgb(178, 182, 196);
 }
 
 .barra-lateral li{
   display: flex;
-  background-color: aqua;
+  background-color: rgb(178, 182, 196);
   height: 20%;
   align-items: center;
   justify-content: center;
+}
+
+.barra-lateral li:hover{
+  background-color: black;
+}
+
+.barra-lateral li a{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
 .barra-lateral *{
