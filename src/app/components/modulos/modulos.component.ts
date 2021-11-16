@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModulosComponent implements OnInit {
 
+  
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  aniadirModulo(){
+
+    
   }
 
 }
