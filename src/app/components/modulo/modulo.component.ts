@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Modulo } from 'src/app/models/modulo';
 
 @Component({
   selector: 'app-modulo',
@@ -7,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModuloComponent implements OnInit {
 
-  moduloName : string = 'Modulo';
-  numDias    : number = 10 ;
+  @Input() modulo : Modulo = new Modulo("Mates",2);
 
   constructor() { }
 

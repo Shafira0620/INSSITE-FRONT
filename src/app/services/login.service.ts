@@ -16,4 +16,8 @@ export class LoginService {
     let url = this.base_url + "auth/login" 
     return this.http.post<ResponseI>(url, form)
   }
+
+  /*<getAllModules():Observable<>{
+    return this.http.get<>(this.base_url)
+  }*/
 }

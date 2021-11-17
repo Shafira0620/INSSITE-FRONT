@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Modulo } from 'src/app/models/modulo';
 
 @Component({
   selector: 'app-modulos',
@@ -7,16 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModulosComponent implements OnInit {
 
-  
+  listaModulos:Modulo[];
 
-  constructor() { }
+  constructor() {
+    this.listaModulos = [];
+    //this.listaModulos.push(new Modulo('Biologia', 12));
+    //this.listaModulos.push(new Modulo('Marino', 10));
+   }
 
   ngOnInit(): void {
   }
 
-  aniadirModulo(){
+  guardarModulo(respuesta: Modulo){
+    this.listaModulos.push(respuesta);
+  }
 
-    
+  terminarCurso(){
+    if(this.listaModulos.length == 0){
+      alert ("Debe existir al menos un curso");
+    }else{
+      alert ("curso creado con exito");
+    }
   }
 
 }
