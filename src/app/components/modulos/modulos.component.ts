@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Modulo } from 'src/app/models/modulo';
+
 
 @Component({
   selector: 'app-modulos',
@@ -25,10 +27,12 @@ export class ModulosComponent implements OnInit {
 
   terminarCurso(){
     if(this.listaModulos.length == 0){
-      alert ("Debe existir al menos un curso");
+      alert("Debe existir al menos un curso");
     }else{
-      alert ("curso creado con exito");
+      alert("Curso creado con exito");
     }
   }
+
+
 
 }
